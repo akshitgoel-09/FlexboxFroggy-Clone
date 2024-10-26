@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Froggy - Clone</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://flexboxfroggy.com/favicon.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #43a047;
+        color: #fff;
+      }
+      .logo {
+        font-family: "Fredoka", sans-serif;
+        font-size: 45px;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+      }
+      main {
+        font-family: "Fredoka", sans-serif;
+        color: rgba(255, 255, 255, 0.7);
+        text-align: center;
+      }
+      .victory {
+        font-size: 80px;
+        margin-bottom: 0;
+      }
+      .message {
+        font-size: 40px;
+        margin: 10px 100px 65px 100px;
+      }
+      footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .links {
+        width: 70%;
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.6);
+        font-family: "PT Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        text-align: center;
+      }
+
+      .links a {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .links:nth-child(2) {
+        margin-bottom: 15px;
+      }
+
+      .links:nth-child(4) {
+        margin-bottom: 30px;
+        width: 79%;
+      }
+
+      .btn-settings {
+        padding: 1px 8px 3px 8px;
+        border-radius: 4px;
+        border: 0;
+        outline: 0;
+        margin-top: 5px;
+        font-family: "PT Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .links hr {
+        width: 90%;
+        border-top: 1px;
+      }
+
+      .divider {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">FLEXBOX FROGGY</h1>
+    </header>
+    <main>
+      <section>
+        <h1 class="victory">You Win</h1>
+        <h2 class="message">
+          Thanks to your mastery of flexbox, you were able to help all of the
+          frogs to their lilypads.
+        </h2>
+      </section>
+    </main>
+    <footer>
+      <div class="links">
+        <a href="https://flexboxfroggy.com/">FLEXBOX FROGGY</a> is created by
+        <a href="https://codepip.com/">Codepip</a> •
+        <a href="https://youtube.com/codepip">YouTube</a> •
+        <a href="https://twitter.com/playcodepip">Twitter</a> •
+        <a href="https://github.com/thomaspark/flexboxfroggy/">GitHub</a> •
+        <button class="btn-settings hover-class">Settings</button>
+      </div>
+      <div class="links">
+        Want to learn CSS grid? Play
+        <a href="https://codepip.com/games/grid-garden/">Grid Garden</a>
+      </div>
+      <div class="divider">. . . . .</div>
+      <div class="links">
+        Hey there, my name is Anmol Singh Sodlan. I am a student and I created
+        this website as an assignment project for my coaching class by taking
+        inspiration from FLEXBOX FROGGY website. I do not own the contents on
+        this website. I have attached the links to the original website and its
+        publisher's various social media handles above. Do check them out.
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Froggy - Clone</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://flexboxfroggy.com/favicon.ico"
+    />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    <style>
+      .yellow-pad {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">FLEXBOX FROGGY</h1>
+      <div class="counter">
+        <span class="counter-left hover-class">
+          <span class="counter-left-arrow"></span>
+        </span>
+        <span class="counter-centre hover-class">
+          <span class="counter-centre-plate">Level 17 of 24</span>
+          <span class="counter-centre-arrow">
+            <span class="counter-down-arrow"></span>
+          </span>
+        </span>
+        <span class="counter-right hover-class">
+          <span class="counter-right-arrow"></span>
+        </span>
+      </div>
+      <div class="modal-levels">
+        <div class="levels">
+          <span class="level">1</span>
+          <span class="level">2</span>
+          <span class="level">3</span>
+          <span class="level">4</span>
+          <span class="level">5</span>
+          <span class="level">6</span>
+          <span class="level">7</span>
+          <span class="level">8</span>
+          <span class="level">9</span>
+          <span class="level">10</span>
+          <span class="level">11</span>
+          <span class="level">12</span>
+          <span class="level">13</span>
+          <span class="level">14</span>
+          <span class="level">15</span>
+          <span class="level">16</span>
+          <span class="level">17</span>
+          <span class="level">18</span>
+          <span class="level">19</span>
+          <span class="level">20</span>
+          <span class="level">21</span>
+          <span class="level">22</span>
+          <span class="level">23</span>
+          <span class="level">24</span>
+          <div class="reset">Reset</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="left">
+        <div class="instructions">
+          <p class="text">
+            Combine
+            <code
+              class="coding-instructions modal-code hover-class"
+              style="border-bottom: 1px solid rgba(255, 255, 255, 0.8)"
+              >order</code
+            >
+            with
+            <code
+              class="coding-instructions modal-code hover-class"
+              style="border-bottom: 1px solid rgba(255, 255, 255, 0.8)"
+              >align-self</code
+            >
+            to help the frogs to their destinations.
+          </p>
+          <div class="modal-help modal-help-order">
+            <p class="text">
+              Specifies the order of the flex item.
+              <br />
+            </p>
+            <code class="coding-instructions">
+              &lt;integer&gt; (... -1, 0 (default), 1, ...)</code
+            >
+          </div>
+          <div class="modal-help modal-help-align-self">
+            <p class="text">
+              Aligns a flex item along the cross axis, overriding the
+              <code class="coding-instructions">align-items</code> value.<br />
+            </p>
+            <code class="coding-instructions">flex-start</code>
+            <code class="coding-instructions">flex-end</code>
+            <code class="coding-instructions">center</code>
+            <code class="coding-instructions">baseline</code>
+            <code class="coding-instructions">stretch</code>
+          </div>
+        </div>
+        <div class="codebox">
+          <div class="numbers">
+            1
+            <br />
+            2
+            <br />
+            3
+            <br />
+            4
+            <br />
+            5
+            <br />
+            6
+            <br />
+            7
+            <br />
+            8
+            <br />
+            9
+            <br />
+            10
+          </div>
+          <div class="code">
+            <pre class="written-code-2">
+#pond {
+  display: flex;
+  align-items: flex-start;
+}
+            </pre>
+            <pre class="written-code-2-2">
+.yellow {
+  <textarea class="input-code" rows="2"></textarea>
+}
+            </pre>
+          </div>
+          <button class="btn-next hover-class disable">Next</button>
+        </div>
+        <footer>
+          <div class="links">
+            <a href="https://flexboxfroggy.com/">FLEXBOX FROGGY</a> is created
+            by <a href="https://codepip.com/">Codepip</a> •
+            <a href="https://youtube.com/codepip">YouTube</a> •
+            <a href="https://twitter.com/playcodepip">Twitter</a> •
+            <a href="https://github.com/thomaspark/flexboxfroggy/">GitHub</a> •
+            <button class="btn-settings hover-class">Settings</button>
+          </div>
+          <div class="links">
+            Want to learn CSS grid? Play
+            <a href="https://codepip.com/games/grid-garden/">Grid Garden</a>
+          </div>
+          <div class="divider">. . . . .</div>
+          <div class="links">
+            Hey there, my name is Anmol Singh Sodlan. I am a student and I
+            created this website as an assignment project for my coaching class
+            by taking inspiration from FLEXBOX FROGGY website. I do not own the
+            contents on this website. I have attached the links to the original
+            website and its publisher's various social media handles above. Do
+            check them out.
+          </div>
+        </footer>
+      </section>
+      <section class="right">
+        <div class="board">
+          <div class="pond">
+            <div class="frog-container yellow-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container yellow-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+            <div class="frog-container green-frog">
+              <div class="frog frog-animation"></div>
+            </div>
+          </div>
+          <div class="pads">
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container green-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container yellow-pad">
+              <div class="pad"></div>
+            </div>
+            <div class="pad-container yellow-pad">
+              <div class="pad"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const pageNumber = 17;
+      const greenPresent = true;
+      const yellowPresent = true;
+      const redPresent = false;
+      const order = true;
+      const orderColor = "yellow-frog";
+    </script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
